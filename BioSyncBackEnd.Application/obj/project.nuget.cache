@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LCcJD2ZuyBY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\junior\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\junior\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\junior\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\junior\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

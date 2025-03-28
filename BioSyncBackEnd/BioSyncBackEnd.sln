@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.API", "BioSync.API.csproj", "{060A4F1F-2EE7-4A4C-90DA-0CC14CF85B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.Application", "..\BioSyncBackEnd.Application\BioSync.Application.csproj", "{60B0420A-6691-4E1C-BAB6-467DA7A920DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.Domain", "..\BioSyncBackEnd.Domain\BioSync.Domain.csproj", "{DD2319F4-FE34-4AC5-9A9C-BE5516DB3E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.Domain.Test", "..\BioSyncBackEnd.Domain.Test\BioSync.Domain.Test.csproj", "{3A0EDFEA-9DF8-4F7B-BDAF-593D657156CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.Infra.Data", "..\BioSyncBackEnd.Infra.Data\BioSync.Infra.Data.csproj", "{B5A14B48-9D32-4DA1-9423-7F8336552B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSync.Infra.IoC", "..\BioSyncBackEnd.Infra.IoC\BioSync.Infra.IoC.csproj", "{14488907-3C48-4162-A8FB-D42401F80FE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{060A4F1F-2EE7-4A4C-90DA-0CC14CF85B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060A4F1F-2EE7-4A4C-90DA-0CC14CF85B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060A4F1F-2EE7-4A4C-90DA-0CC14CF85B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060A4F1F-2EE7-4A4C-90DA-0CC14CF85B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B0420A-6691-4E1C-BAB6-467DA7A920DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B0420A-6691-4E1C-BAB6-467DA7A920DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B0420A-6691-4E1C-BAB6-467DA7A920DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B0420A-6691-4E1C-BAB6-467DA7A920DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2319F4-FE34-4AC5-9A9C-BE5516DB3E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2319F4-FE34-4AC5-9A9C-BE5516DB3E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2319F4-FE34-4AC5-9A9C-BE5516DB3E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2319F4-FE34-4AC5-9A9C-BE5516DB3E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0EDFEA-9DF8-4F7B-BDAF-593D657156CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0EDFEA-9DF8-4F7B-BDAF-593D657156CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0EDFEA-9DF8-4F7B-BDAF-593D657156CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0EDFEA-9DF8-4F7B-BDAF-593D657156CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A14B48-9D32-4DA1-9423-7F8336552B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A14B48-9D32-4DA1-9423-7F8336552B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A14B48-9D32-4DA1-9423-7F8336552B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A14B48-9D32-4DA1-9423-7F8336552B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14488907-3C48-4162-A8FB-D42401F80FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14488907-3C48-4162-A8FB-D42401F80FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14488907-3C48-4162-A8FB-D42401F80FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14488907-3C48-4162-A8FB-D42401F80FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9C2344D-27B8-4B0E-BF49-E8440F7A6CD5}
+	EndGlobalSection
+EndGlobal
