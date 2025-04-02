@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj": {}
+    "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj": {
+    "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\BioSync.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj",
+        "projectUniqueName": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\BioSync.Application.csproj",
         "projectName": "BioSync.Application",
-        "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj",
-        "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\obj\\",
+        "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\BioSync.Application.csproj",
+        "packagesPath": "C:\\Users\\2971392321006\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2971392321006\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
-                "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
+              "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
+                "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
               }
             }
           }
@@ -46,9 +47,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -79,24 +80,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
+    "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj",
         "projectName": "BioSync.Domain",
-        "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj",
-        "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\obj\\",
+        "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj",
+        "packagesPath": "C:\\Users\\2971392321006\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2971392321006\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -105,6 +106,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,9 +123,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -144,24 +146,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj": {
+    "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj",
         "projectName": "BioSync.Infra.Data",
-        "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\2971392321006\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2971392321006\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -170,14 +172,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
-                "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
+              "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
+                "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
               }
             }
           }
@@ -190,9 +193,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -243,24 +246,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj": {
+    "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj",
         "projectName": "BioSync.Infra.IoC",
-        "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj",
-        "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.IoC\\obj\\",
+        "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.IoC\\BioSync.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\2971392321006\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2971392321006\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -269,20 +272,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj": {
-                "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Application\\BioSync.Application.csproj"
+              "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\BioSync.Application.csproj": {
+                "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Application\\BioSync.Application.csproj"
               },
-              "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
-                "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
+              "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj": {
+                "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Domain\\BioSync.Domain.csproj"
               },
-              "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\junior\\Downloads\\BIoSyncBackEnd\\BIoSyncBackEnd\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj"
+              "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\2971392321006\\Desktop\\BackEnd\\backend-biosync\\BioSyncBackEnd.Infra.Data\\BioSync.Infra.Data.csproj"
               }
             }
           }
@@ -295,9 +299,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -332,7 +336,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
