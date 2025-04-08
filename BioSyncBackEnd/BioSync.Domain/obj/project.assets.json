@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
       "projectName": "BioSync.Domain",
-      "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
+      "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
       "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\obj\\",
+      "outputPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2,7 +2,7 @@
 
 namespace BioSync.Domain.Entities
 {
-    internal class CategoriaMaterial
+    public class CategoriaMaterial : Entity
     {
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
@@ -11,6 +11,7 @@ namespace BioSync.Domain.Entities
         public CategoriaMaterial(string nome, string descricao)
         {
             ValidateDomain(nome, descricao);
+            Materiais = new List<Material>();
         }
 
         private void ValidateDomain(string nome, string descricao)

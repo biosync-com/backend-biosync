@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj": {}
+    "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj": {
+    "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj",
+        "projectUniqueName": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj",
         "projectName": "BioSync.Application",
-        "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj",
+        "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\BioSync.Application.csproj",
         "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\obj\\",
+        "outputPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
-                "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj"
+              "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
+                "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj"
               },
-              "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj": {
-                "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj"
+              "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj": {
+    "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj",
+        "projectUniqueName": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj",
         "projectName": "BioSync.Domain.Test",
-        "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj",
+        "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj",
         "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\obj\\",
+        "outputPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
-                "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj"
+              "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
+                "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
+    "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
         "projectName": "BioSync.Domain",
-        "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
+        "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
         "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\obj\\",
+        "outputPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -242,14 +242,14 @@
         }
       }
     },
-    "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj": {
+    "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj",
         "projectName": "BioSync.Infra.IoC",
-        "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj",
+        "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\BioSync.Infra.IoC.csproj",
         "packagesPath": "C:\\Users\\junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\obj\\",
+        "outputPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -270,8 +270,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj": {
-                "projectPath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj"
+              "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj": {
+                "projectPath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain.Test\\BioSync.Domain.Test.csproj"
               }
             }
           }

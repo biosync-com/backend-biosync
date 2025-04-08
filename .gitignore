@@ -1,0 +1,45 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sdf
+*.sln.docstates
+
+# Build Results
+bin/
+obj/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.userosscache
+*.sln.ide
+
+# Auto-generated files
+*.generated.cs
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Others
+*.dbmdl
+*.bak
+*.cache
+*.vspscc
+*.vssscc
+*.tmp
+*.swp
+*.ncb
+
+# Entity Framework Migrations Snapshots
+*MigrationsSnapshot.cs

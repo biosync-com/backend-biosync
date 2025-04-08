@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "39e+/mO8ys4=",
+  "dgSpecHash": "degB5CG33ys=",
   "success": true,
-  "projectFilePath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
+  "projectFilePath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSync.Domain\\BioSync.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

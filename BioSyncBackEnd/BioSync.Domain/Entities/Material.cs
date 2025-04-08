@@ -4,17 +4,20 @@ namespace BioSync.Domain.Entities
 {
     public class Material : Entity
     {
-        public string Nome { get; set; }
-        public string UnidadeMedida { get; set; }
-        public bool EhReciclavel { get; set; }
-        public int CategoriaMaterialId { get; set; }
-        public Material(string nome, string unidadeMedida, bool ehReciclavel, int categoriaMaterialId)
+        public string Nome { get; private set; }
+        public string UnidadeMedida { get; private set; }
+
+        // Relacionamento com Categoria
+        public int CategoriaMaterialId { get; private set; }
+        public CategoriaMaterial CategoriaMaterial { get; private set; }
+
+        public Material(string nome, string unidadeMedida, int categoriaMaterialId)
         {
-            ValidateDomain(nome, unidadeMedida, categoriaMaterialId);
-            EhReciclavel = ehReciclavel;
+            ValidateDomain(nome, unidadeMedida);
+            CategoriaMaterialId = categoriaMaterialId;
         }
 
-        private void ValidateDomain(string nome, string unidadeMedida, int categoriaMaterialId)
+        private void ValidateDomain(string nome, string unidadeMedida)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(nome),
                 "Nome do material é obrigatório");
@@ -22,15 +25,9 @@ namespace BioSync.Domain.Entities
                 "Nome muito curto, mínimo 3 caracteres");
             DomainExceptionValidation.When(string.IsNullOrEmpty(unidadeMedida),
                 "Unidade de medida é obrigatória");
-            DomainExceptionValidation.When(categoriaMaterialId <= 0,
-                "Categoria do material é obrigatória");
 
             Nome = nome;
             UnidadeMedida = unidadeMedida;
-            CategoriaMaterialId = categoriaMaterialId;
         }
     }
-
-
 }
-

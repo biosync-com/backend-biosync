@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/+2EuLafWI0=",
+  "dgSpecHash": "LY7D//BvB60=",
   "success": true,
-  "projectFilePath": "C:\\Users\\junior\\Desktop\\BioSync\\backend-biosync\\BioSyncBackEnd\\BioSyncAPI\\BioSync.API.csproj",
+  "projectFilePath": "C:\\Users\\junior\\source\\repos\\biosync-com\\backend-biosync\\BioSyncBackEnd\\BioSyncAPI\\BioSync.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\junior\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\junior\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
