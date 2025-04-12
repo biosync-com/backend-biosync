@@ -16,7 +16,7 @@ namespace BioSync.Domain.Entities.Tests
             Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
             Pessoa pessoa = new Pessoa("Daigo Omura", "65495135782", "16987421680", "daigo.carnival@zyuden.com", endereco, "foto.jpg");
             Material material = new Material("Material Teste", "kg", 1);
-
+            
             Action action = () => new Coletor(pessoa, endereco, material);
 
             action.Should().NotThrow<DomainExceptionValidation>();
