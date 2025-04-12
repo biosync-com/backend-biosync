@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BioSync.Domain.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d1955fc41ff504d0a7be3afe50e2b920f77230a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39f6cdb161583ae7bae4fa32e81c1b61ad68d667")]
 [assembly: System.Reflection.AssemblyProductAttribute("BioSync.Domain.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BioSync.Domain.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
