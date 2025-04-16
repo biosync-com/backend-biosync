@@ -1,64 +1,105 @@
 using BioSync.Domain.Entities;
+using BioSync.Domain.Enums;
 using BioSync.Domain.Validation;
 using FluentAssertions;
 using Xunit;
 
-namespace BioSync.Domain.Entities.Tests
+namespace BioSync.Domain.Tests
 {
     public class UsuarioTests
     {
-        #region Testes Positivos de Usuario
-        [Fact(DisplayName = "Criar Usuário Com Estado Válido")]
-        public void CriarUsuario_ComParametrosValidos_ResultObjetoEstadoValido()
-        {
-            Endereco endereco = new Endereco("Rua Agasaki", "777", "Tori Tori", "Kizuna Silver", "Kizuna Five", "25962115");
-            Pessoa pessoa = new Pessoa("Goury Gabriev", "32599874255", "16962574986", "goury.lightofsword@slayers.com", endereco, "gglos.jpg");
+        private Endereco EnderecoValido() =>
+            new Endereco("Rua X", "123", "Bairro", "Cidade", Estado.SP, "12345-678");
 
-            Action action = () => new Usuario(pessoa, endereco);
+        #region Testes Positivos
+
+        [Fact(DisplayName = "Criar Usuario com dados válidos")]
+        public void CriarUsuario_ComParametrosValidos_NaoDeveLancarExcecao()
+        {
+            Action action = () => new Usuario(
+                nome: "Maria",
+                cpf: "12345678901",
+                telefone: "11999999999",
+                email: "maria@email.com",
+                endereco: EnderecoValido(),
+                fotoDocumento: "foto.jpg",
+                senha: "senha1234",
+                tipo: TipoUsuario.Comum);
 
             action.Should().NotThrow<DomainExceptionValidation>();
         }
+
+        [Fact(DisplayName = "Criar Usuario deve definir email como não verificado")]
+        public void CriarUsuario_EmailVerificado_DeveSerFalso()
+        {
+            var usuario = new Usuario(
+                "Carlos",
+                "12345678901",
+                "11988888888",
+                "carlos@email.com",
+                EnderecoValido(),
+                "foto.jpg",
+                "senha12345",
+                TipoUsuario.Comum);
+
+            usuario.EmailVerificado.Should().BeFalse();
+        }
+
+        [Fact(DisplayName = "Verificar email deve mudar status")]
+        public void VerificarEmail_DeveAlterarEmailVerificadoParaTrue()
+        {
+            var usuario = new Usuario(
+                "Fernanda",
+                "12345678901",
+                "11911112222",
+                "fernanda@email.com",
+                EnderecoValido(),
+                "foto.jpg",
+                "senha12345",
+                TipoUsuario.Comum);
+
+            usuario.VerificarEmail();
+            usuario.EmailVerificado.Should().BeTrue();
+        }
+
         #endregion
 
-        #region Testes Negativos de Usuario
+        #region Testes Negativos
 
-        [Fact(DisplayName = "Criar Usuário Com Pessoa Nula")]
-        public void CriarUsuario_ComPessoaNula_ResultArgumentNullException()
+        [Fact(DisplayName = "Criar Usuario com nome nulo deve lançar exceção")]
+        public void CriarUsuario_ComNomeNulo_DeveLancarExcecao()
         {
-            Endereco endereco = new Endereco("Rua Agasaki", "777", "Tori Tori", "Kizuna Silver", "Kizuna Five", "25962115");
+            Action action = () => new Usuario(
+                nome: null,
+                cpf: "12345678901",
+                telefone: "11999999999",
+                email: "email@email.com",
+                endereco: EnderecoValido(),
+                fotoDocumento: "foto.jpg",
+                senha: "senha1234",
+                tipo: TipoUsuario.Comum);
 
-            Action action = () => new Usuario(null, endereco);
-
-            action.Should().Throw<ArgumentNullException>();
+            action.Should().Throw<DomainExceptionValidation>()
+                .WithMessage("Nome é obrigatório");
         }
 
-        [Fact(DisplayName = "Criar Usuário Com Endereco Nulo")]
-        public void CriarUsuario_ComEnderecoNulo_ResultArgumentNullException()
+        [Fact(DisplayName = "Criar Usuario com senha muito curta deve lançar exceção")]
+        public void CriarUsuario_ComSenhaCurta_DeveLancarExcecao()
         {
-            Pessoa pessoa = new Pessoa("Goury Gabriev", "32599874255", "16962574986", "goury.lightofsword@slayers.com", new Endereco("Rua Agasaki", "777", "Tori Tori", "Kizuna Silver", "Kizuna Five", "25962115"), "gglos.jpg");
+            Action action = () => new Usuario(
+                nome: "João",
+                cpf: "12345678901",
+                telefone: "11999999999",
+                email: "joao@email.com",
+                endereco: EnderecoValido(),
+                fotoDocumento: "foto.jpg",
+                senha: "123",
+                tipo: TipoUsuario.Comum);
 
-            Action action = () => new Usuario(pessoa, null);
-
-            action.Should().Throw<ArgumentNullException>();
+            action.Should().Throw<DomainExceptionValidation>()
+                .WithMessage("Senha inválida, mínimo 8 caracteres.");
         }
 
-        [Fact(DisplayName = "Criar Usuário Com CPF Inválido")]
-        public void CriarUsuario_ComCpfInvalido_ResultDomainExceptionValidation()
-        {
-            Endereco endereco = new Endereco("Rua Agasaki", "777", "Tori Tori", "Kizuna Silver", "Kizuna Five", "25962115");
-            Action action = () => new Usuario(new Pessoa("Goury Gabriev", "12345", "16962574986", "goury.lightofsword@slayers.com", endereco, "gglos.jpg"), endereco);
-
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("CPF inválido");
-        }
-
-        [Fact(DisplayName = "Criar Usuário Com Email Inválido")]
-        public void CriarUsuario_ComEmailInvalido_ResultDomainExceptionValidation()
-        {
-            Endereco endereco = new Endereco("Rua Agasaki", "777", "Tori Tori", "Kizuna Silver", "Kizuna Five", "25962115");
-            Action action = () => new Usuario(new Pessoa("Goury Gabriev", "32599874255", "16962574986", "emailinvalido", endereco, "gglos.jpg"), endereco);
-
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("Email inválido");
-        }
         #endregion
     }
 }

@@ -8,6 +8,7 @@ namespace BioSync.Infra.Data.Context
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
           : base(options) { }
 
+        public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Coletor> Coletores { get; set; }
         public DbSet<Agendamento> Agendamentos { get; set; }
