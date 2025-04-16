@@ -1,11 +1,9 @@
 ﻿using BioSync.Domain.Entities;
+using BioSync.Domain.Enums;
 using BioSync.Domain.Validation;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using Xunit;
 
-namespace BioSync.Domain.Entities.Tests
+namespace BioSync.Domain.Tests
 {
     public class ColetorTests
     {
@@ -16,67 +14,97 @@ namespace BioSync.Domain.Entities.Tests
             Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
             Pessoa pessoa = new Pessoa("Daigo Omura", "65495135782", "16987421680", "daigo.carnival@zyuden.com", endereco, "foto.jpg");
             Material material = new Material("Material Teste", "kg", 1);
-            
+
             Action action = () => new Coletor(pessoa, endereco, material);
 
+        #region Testes Positivos
+
+        [Fact(DisplayName = "Criar Coletor com dados válidos")]
+        public void CriarColetor_ComParametrosValidos_NaoDeveLancarExcecao()
+        {
+            Action action = () => CriarColetorValido();
             action.Should().NotThrow<DomainExceptionValidation>();
         }
+
+        [Fact(DisplayName = "Coletor deve iniciar com listas vazias")]
+        public void Coletor_DeveIniciarComListasVazias()
+        {
+            var coletor = CriarColetorValido();
+
+            coletor.AgendamentosAceitos.Should().BeEmpty();
+            coletor.MateriaisColetados.Should().BeEmpty();
+        }
+
+        [Fact(DisplayName = "Coletor deve conseguir aceitar agendamento")]
+        public void AceitarAgendamento_Valido_DeveAdicionarNaLista()
+        {
+            var coletor = CriarColetorValido();
+            var agendamento = new Agendamento(
+                DateTime.Now.AddDays(1),
+                TimeSpan.FromHours(8),
+                TimeSpan.FromHours(10),
+                5,
+                "foto.jpg",
+                "obs");
+
+            coletor.AceitarAgendamento(agendamento);
+
+            coletor.AgendamentosAceitos.Should().ContainSingle().Which.Should().Be(agendamento);
+        }
+
+        [Fact(DisplayName = "Coletor deve conseguir adicionar material à lista")]
+        public void AdicionarMaterial_Valido_DeveAdicionarComSucesso()
+        {
+            var coletor = CriarColetorValido();
+            var material = new Material("Papelão", 1);
+
+            coletor.AdicionarMaterial(material);
+
+            coletor.MateriaisColetados.Should().ContainSingle().Which.Should().Be(material);
+        }
+
         #endregion
 
-        #region Testes Negativos de Coletor
+        #region Testes Negativos
 
-        [Fact(DisplayName = "Criar Coletor Com Pessoa Nula")]
-        public void CriarColetor_ComPessoaNula_ResultArgumentNullException()
+        [Fact(DisplayName = "Criar Coletor com senha muito curta deve lançar exceção")]
+        public void CriarColetor_ComSenhaCurta_DeveLancarExcecao()
         {
-            Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
-            Material material = new Material("Material Teste", "kg", 1);
+            Action action = () => new Coletor(
+                "João",
+                "12345678901",
+                "11999999999",
+                "joao@email.com",
+                EnderecoValido(),
+                "documento.jpg",
+                "123");
 
-            Action action = () => new Coletor(null, endereco, material);
-
-            action.Should().Throw<ArgumentNullException>();
+            action.Should().Throw<DomainExceptionValidation>()
+                .WithMessage("Senha muito curta, mínimo 8 caracteres");
         }
 
-        [Fact(DisplayName = "Criar Coletor Com Endereco Nulo")]
-        public void CriarColetor_ComEnderecoNulo_ResultArgumentNullException()
+        [Fact(DisplayName = "Coletor não deve aceitar agendamento nulo")]
+        public void AceitarAgendamento_Nulo_DeveLancarExcecao()
         {
-            Pessoa pessoa = new Pessoa("Daigo Omura", "65495135782", "16987421680", "daigo.carnival@zyuden.com", new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314"), "foto.jpg");
-            Material material = new Material("Material Teste", "kg", 1);
+            var coletor = CriarColetorValido();
 
-            Action action = () => new Coletor(pessoa, null, material);
+            Action action = () => coletor.AceitarAgendamento(null!);
 
-            action.Should().Throw<ArgumentNullException>();
+            action.Should().Throw<DomainExceptionValidation>()
+                .WithMessage("Agendamento inválido.");
         }
 
-        [Fact(DisplayName = "Criar Coletor Com Material Nulo")]
-        public void CriarColetor_ComMaterialNulo_ResultArgumentNullException()
+        [Fact(DisplayName = "Coletor não deve adicionar material nulo")]
+        public void AdicionarMaterial_Nulo_DeveLancarExcecao()
         {
-            Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
-            Pessoa pessoa = new Pessoa("Daigo Omura", "65495135782", "16987421680", "daigo.carnival@zyuden.com", endereco, "foto.jpg");
+            var coletor = CriarColetorValido();
 
-            Action action = () => new Coletor(pessoa, endereco, null);
+            Action action = () => coletor.AdicionarMaterial(null!);
 
-            action.Should().Throw<ArgumentNullException>();
+            action.Should().Throw<DomainExceptionValidation>()
+                .WithMessage("Material inválido.");
         }
 
-        [Fact(DisplayName = "Criar Coletor Com CPF Inválido")]
-        public void CriarColetor_ComCpfInvalido_ResultDomainExceptionValidation()
-        {
-            Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
-            Material material = new Material("Material Teste", "kg", 1);
-            Action action = () => new Coletor(new Pessoa("Daigo Omura", "12345", "16987421680", "daigo.carnival@zyuden.com", endereco, "foto.jpg"), endereco, material);
-
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("CPF inválido");
-        }
-
-        [Fact(DisplayName = "Criar Coletor Com Email Inválido")]
-        public void CriarColetor_ComEmailInvalido_ResultDomainExceptionValidation()
-        {
-            Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
-            Material material = new Material("Material Teste", "kg", 1);
-            Action action = () => new Coletor(new Pessoa("Daigo Omura", "65495135782", "16987421680", "emailinvalido", endereco, "foto.jpg"), endereco, material);
-
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("Email inválido");
-        }
         #endregion
     }
 }
