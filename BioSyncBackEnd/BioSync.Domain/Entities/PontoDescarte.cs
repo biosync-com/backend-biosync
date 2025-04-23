@@ -11,7 +11,9 @@ namespace BioSync.Domain.Entities
         public string EmailOuSite { get; set; }
         public string NomeResponsavel { get; set; }
 
+        public int EnderecoId { get; set; }
         public Endereco Endereco { get; set; }
+
         public ICollection<DiaFuncionamento> DiasFuncionamento { get; set; }
 
         public PontoDescarte(
@@ -57,6 +59,7 @@ namespace BioSync.Domain.Entities
             EmailOuSite = emailOuSite;
             NomeResponsavel = nomeResponsavel;
             Endereco = endereco;
+            EnderecoId = endereco.Id;
         }
     }
 }

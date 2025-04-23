@@ -7,15 +7,18 @@ namespace BioSync.Domain.Tests
 {
     public class ColetorTests
     {
-        #region Testes Positivos de Coletor
-        [Fact(DisplayName = "Criar Coletor Com Estado Válido")]
-        public void CriarColetor_ComParametrosValidos_ResultObjetoEstadoValido()
-        {
-            Endereco endereco = new Endereco("Rua Vai dar Bom", "627", "Brave In", "Gaburincho", "Kyoryugers", "25962314");
-            Pessoa pessoa = new Pessoa("Daigo Omura", "65495135782", "16987421680", "daigo.carnival@zyuden.com", endereco, "foto.jpg");
-            Material material = new Material("Material Teste", "kg", 1);
+        private Endereco EnderecoValido() =>
+            new Endereco("Av. Brasil", "456", "Centro", "Cidade", Estado.MG, "99999-999");
 
-            Action action = () => new Coletor(pessoa, endereco, material);
+        private Coletor CriarColetorValido() =>
+            new Coletor(
+                "João",
+                "12345678901",
+                "11999999999",
+                "joao@email.com",
+                EnderecoValido(),
+                "documento.jpg",
+                "senha12345");
 
         #region Testes Positivos
 

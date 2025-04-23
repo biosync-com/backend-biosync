@@ -43,6 +43,11 @@ namespace BioSync.Domain.Entities
             "Foto dos resíduos é obrigatória");
             DomainExceptionValidation.When(fotoResiduos.Length > 250,
             "URL da foto muito longa, máximo 250 caracteres");
+            if (!string.IsNullOrEmpty(observacoes))
+            {
+                DomainExceptionValidation.When(observacoes.Length > 500, "Observações muito longas, máximo 500 caracteres.");
+            }
+
 
             Data = data;
             HoraInicioDisponivel = horaInicioDisponivel;
