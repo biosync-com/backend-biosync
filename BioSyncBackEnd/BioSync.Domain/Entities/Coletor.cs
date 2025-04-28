@@ -8,9 +8,9 @@ namespace BioSync.Domain.Entities
         public DateTime DataCadastro { get; private set; }
 
         public ICollection<Agendamento> AgendamentosAceitos { get; private set; }
-        public ICollection<Material> MateriaisColetados { get; private set; }
+        //public ICollection<Material> MateriaisColetados { get; private set; }
 
-        public Coletor(string nome, string cpf, string telefone, string email, Endereco endereco, string fotoDocumento, string senha)
+        public Coletor(string nome, string cpf, string telefone, string email, Endereco endereco, string fotoDocumento, string senha, bool emailVerificado )
             : base(nome, cpf, telefone, email, endereco, fotoDocumento)
         {
             DomainExceptionValidation.When(string.IsNullOrWhiteSpace(senha) || senha.Length < 8,
@@ -19,7 +19,8 @@ namespace BioSync.Domain.Entities
             Senha = senha;
             DataCadastro = DateTime.Now;
             AgendamentosAceitos = new List<Agendamento>();
-            MateriaisColetados = new List<Material>();
+            EmailVerificado = emailVerificado;
+            //MateriaisColetados = new List<Material>();
         }
 
         public void AceitarAgendamento(Agendamento agendamento)
@@ -28,10 +29,10 @@ namespace BioSync.Domain.Entities
             AgendamentosAceitos.Add(agendamento);
         }
 
-        public void AdicionarMaterial(Material material)
-        {
-            DomainExceptionValidation.When(material == null, "Material inválido.");
-            MateriaisColetados.Add(material);
-        }
+        //public void AdicionarMaterial(Material material)
+        //{
+            //DomainExceptionValidation.When(material == null, "Material inválido.");
+            //MateriaisColetados.Add(material);
+        //}
     }
 }

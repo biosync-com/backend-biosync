@@ -1,9 +1,11 @@
 ﻿using BioSync.Application.DTOs;
 using BioSync.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BioSync.API.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class AgendamentoController : ControllerBase
@@ -16,6 +18,7 @@ namespace BioSync.API.Controllers
         }
 
         // GET: api/Agendamento
+        [Authorize(Roles = "Usuario,Coletor")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AgendamentoDTO>>> GetAll()
         {
@@ -31,6 +34,7 @@ namespace BioSync.API.Controllers
         }
 
         // GET: api/Agendamento/{id}
+        [Authorize(Roles = "Usuario,Coletor")]
         [HttpGet("{id}")]
         public async Task<ActionResult<AgendamentoDTO>> GetById(int? id)
         {
@@ -56,6 +60,7 @@ namespace BioSync.API.Controllers
         }
 
         // POST: api/Agendamento
+        [Authorize(Roles = "Usuario")]
         [HttpPost]
         public async Task<ActionResult> Add(AgendamentoDTO agendamentoDto)
         {
@@ -76,6 +81,7 @@ namespace BioSync.API.Controllers
         }
 
         // PUT: api/Agendamento/{id}
+        [Authorize(Roles = "Usuario")]
         [HttpPut("{id}")]
         public async Task<ActionResult> Update(int id, AgendamentoDTO agendamentoDto)
         {
@@ -102,6 +108,7 @@ namespace BioSync.API.Controllers
         }
 
         // DELETE: api/Agendamento/{id}
+        [Authorize(Roles = "Usuario")]
         [HttpDelete("{id}")]
         public async Task<ActionResult> Remove(int id)
         {

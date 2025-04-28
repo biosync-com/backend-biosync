@@ -13,14 +13,13 @@ namespace BioSync.Domain.Entities
         public string FotoResiduos { get; set; }
         public string Observacoes { get; set; }
 
-    // Relacionamentos futuros
+   
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
 
-        public int? ColetorId { get; set; } // Caso seja aceito por um coletor
+        public int? ColetorId { get; set; } 
         public Coletor? Coletor { get; set; }
 
-    // Lista de materiais incluídos neste agendamento
         public ICollection<Material>? Materiais { get; set; }
 
         public Agendamento(DateTime data, TimeSpan horaInicioDisponivel, TimeSpan horaFimDisponivel,

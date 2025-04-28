@@ -1,6 +1,7 @@
 ﻿using BioSync.Application.DTOs;
 using BioSync.Application.Interfaces;
 using BioSync.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BioSync.API.Controllers
@@ -49,6 +50,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Add(NoticiasDTO noticiaDto)
         {
             try
@@ -63,6 +65,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Update(int id, NoticiasDTO noticiaDto)
         {
             if (id != noticiaDto.Id)
@@ -87,6 +90,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Remove(int id)
         {
             try

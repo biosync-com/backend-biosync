@@ -31,7 +31,6 @@ namespace BioSync.Infra.IoC
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IAgendamentoRepository, AgendamentoRepository>();
 
-
             services.AddScoped<ICategoriaMaterialService, CategoriaMaterialService>();
             services.AddScoped<IMaterialService, MaterialService>();
             services.AddScoped<IColetorService, ColetorService>();
@@ -40,6 +39,7 @@ namespace BioSync.Infra.IoC
             services.AddScoped<IPontoDescarteService, PontoDescarteService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IAgendamentoService, AgendamentoService>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             services.AddAutoMapper(new[] { typeof(DomainToDTOMappingProfile).Assembly });
 

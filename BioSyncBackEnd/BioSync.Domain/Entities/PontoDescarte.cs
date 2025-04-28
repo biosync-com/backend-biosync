@@ -29,10 +29,14 @@ namespace BioSync.Domain.Entities
             string emailOuSite, string nomeResponsavel, Endereco endereco)
         {
             DomainExceptionValidation.When(string.IsNullOrWhiteSpace(nome), "Nome é obrigatório");
+
             DomainExceptionValidation.When(nome.Length < 3, "Nome muito curto, mínimo 3 caracteres");
 
             DomainExceptionValidation.When(string.IsNullOrEmpty(cpf) && string.IsNullOrEmpty(cnpj),
                 "É necessário fornecer CPF ou CNPJ");
+
+            DomainExceptionValidation.When(!string.IsNullOrEmpty(cpf) && !string.IsNullOrEmpty(cnpj),
+               "Você pode fornecer apenas CPF ou CNPJ, não ambos.");
 
             if (!string.IsNullOrEmpty(cpf))
                 DomainExceptionValidation.When(cpf.Length != 11, "CPF inválido");
@@ -41,6 +45,7 @@ namespace BioSync.Domain.Entities
                 DomainExceptionValidation.When(cnpj.Length != 14, "CNPJ inválido");
 
             DomainExceptionValidation.When(string.IsNullOrWhiteSpace(telefone), "Telefone é obrigatório");
+
             DomainExceptionValidation.When(telefone.Length < 10 || telefone.Length > 15,
                 "Telefone inválido");
 

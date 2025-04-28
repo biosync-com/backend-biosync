@@ -17,6 +17,11 @@ namespace BioSync.Infra.Data.Repositories
             _context = context;
         }
 
+        public async Task<Usuario> GetByEmailAsync(string email)
+        {
+            return await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
         public async Task<IEnumerable<Usuario>> GetAllAsync()
         {
             return await _context.Usuarios

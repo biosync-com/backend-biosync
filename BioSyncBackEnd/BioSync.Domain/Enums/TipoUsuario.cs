@@ -2,7 +2,8 @@
 {
     public enum TipoUsuario
     {
-            Comum,
+            Usuario,
+            Coletor,
             Admin
         
     }

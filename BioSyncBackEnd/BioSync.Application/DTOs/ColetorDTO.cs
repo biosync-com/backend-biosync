@@ -34,15 +34,11 @@ namespace BioSync.Application.DTOs
         [Required(ErrorMessage = "A data de cadastro é obrigatória")]
         public DateTime DataCadastro { get; set; }
 
-        [Required(ErrorMessage = "O status do coletor é obrigatório")]
-        [MaxLength(20, ErrorMessage = "O status não pode ter mais que 20 caracteres")]
-        public string Status { get; set; }
-
         public List<AgendamentoDTO> AgendamentosAceitos { get; set; }
-        public List<MaterialDTO> MateriaisColetados { get; set; }
+        //public List<MaterialDTO> MateriaisColetados { get; set; }
 
         public ColetorDTO(int id, string nome, string cpf, string telefone, string email, int enderecoId,
-                          string senha, DateTime dataCadastro, string status)
+                          string senha, DateTime dataCadastro)
         {
             Id = id;
             Nome = nome;
@@ -52,9 +48,8 @@ namespace BioSync.Application.DTOs
             EnderecoId = enderecoId;
             Senha = senha;
             DataCadastro = dataCadastro;
-            Status = status;
             AgendamentosAceitos = new List<AgendamentoDTO>();
-            MateriaisColetados = new List<MaterialDTO>();
+            //MateriaisColetados = new List<MaterialDTO>();
         }
     }
 }

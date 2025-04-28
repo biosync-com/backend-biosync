@@ -8,7 +8,7 @@ namespace BioSync.Domain.Entities
         public string Texto { get; private set; }
         public string ImagemUrl { get; private set; }
         public string? VideoUrl { get; private set; } 
-        public DateTime DataPublicacao { get; private set; }
+        public DateTime DataPublicacao { get; set; }
 
         public Conteudos(string titulo, string texto, string imagemUrl, string? videoUrl = null)
         {

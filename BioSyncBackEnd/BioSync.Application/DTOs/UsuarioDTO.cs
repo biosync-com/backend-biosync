@@ -1,5 +1,4 @@
-﻿using System;
-using BioSync.Domain.Enums;
+﻿using BioSync.Domain.Enums;
 
 namespace BioSync.Application.DTOs
 {

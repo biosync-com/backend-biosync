@@ -13,6 +13,10 @@ namespace BioSync.Infra.Data.Repositories
         {
             _context = context;
         }
+        public async Task<Coletor> GetByEmailAsync(string email)
+        {
+            return await _context.Coletores.FirstOrDefaultAsync(c => c.Email == email);
+        }
 
         public async Task<IEnumerable<Coletor>> GetAllAsync()
         {

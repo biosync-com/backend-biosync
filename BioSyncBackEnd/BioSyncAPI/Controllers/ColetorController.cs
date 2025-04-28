@@ -1,5 +1,6 @@
 ﻿using BioSync.Application.DTOs;
 using BioSync.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BioSync.API.Controllers
@@ -16,6 +17,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<ColetorDTO>>> GetAll()
         {
             try
@@ -30,6 +32,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<ColetorDTO>> GetById(int id)
         {
             try
@@ -48,6 +51,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Add(ColetorDTO coletorDto)
         {
             try
@@ -62,6 +66,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Update(int id, ColetorDTO coletorDto)
         {
             if (id != coletorDto.Id)
@@ -86,6 +91,7 @@ namespace BioSync.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Remove(int id)
         {
             try

@@ -8,8 +8,9 @@ namespace BioSync.Domain.Entities
         public string Descricao { get; private set; }
         public ICollection<Material> Materiais { get; private set; }
 
-        public CategoriaMaterial(string nome, string descricao)
+        public CategoriaMaterial(int id,string nome, string descricao)
         {
+            Id = id;
             ValidateDomain(nome, descricao);
             Materiais = new List<Material>();
         }

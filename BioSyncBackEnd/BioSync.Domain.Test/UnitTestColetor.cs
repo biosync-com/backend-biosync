@@ -35,7 +35,7 @@ namespace BioSync.Domain.Tests
             var coletor = CriarColetorValido();
 
             coletor.AgendamentosAceitos.Should().BeEmpty();
-            coletor.MateriaisColetados.Should().BeEmpty();
+            //coletor.MateriaisColetados.Should().BeEmpty();
         }
 
         [Fact(DisplayName = "Coletor deve conseguir aceitar agendamento")]
@@ -55,16 +55,16 @@ namespace BioSync.Domain.Tests
             coletor.AgendamentosAceitos.Should().ContainSingle().Which.Should().Be(agendamento);
         }
 
-        [Fact(DisplayName = "Coletor deve conseguir adicionar material à lista")]
-        public void AdicionarMaterial_Valido_DeveAdicionarComSucesso()
-        {
-            var coletor = CriarColetorValido();
-            var material = new Material("Papelão", 1);
+        //[Fact(DisplayName = "Coletor deve conseguir adicionar material à lista")]
+        //public void AdicionarMaterial_Valido_DeveAdicionarComSucesso()
+        //{
+            //var coletor = CriarColetorValido();
+            //var material = new Material("Papelão", 1);
 
-            coletor.AdicionarMaterial(material);
+            //coletor.AdicionarMaterial(material);
 
-            coletor.MateriaisColetados.Should().ContainSingle().Which.Should().Be(material);
-        }
+            //coletor.MateriaisColetados.Should().ContainSingle().Which.Should().Be(material);
+        //}
 
         #endregion
 
@@ -97,16 +97,16 @@ namespace BioSync.Domain.Tests
                 .WithMessage("Agendamento inválido.");
         }
 
-        [Fact(DisplayName = "Coletor não deve adicionar material nulo")]
-        public void AdicionarMaterial_Nulo_DeveLancarExcecao()
-        {
-            var coletor = CriarColetorValido();
+        //[Fact(DisplayName = "Coletor não deve adicionar material nulo")]
+        //public void AdicionarMaterial_Nulo_DeveLancarExcecao()
+        //{
+            //var coletor = CriarColetorValido();
 
-            Action action = () => coletor.AdicionarMaterial(null!);
+            //Action action = () => coletor.AdicionarMaterial(null!);
 
-            action.Should().Throw<DomainExceptionValidation>()
-                .WithMessage("Material inválido.");
-        }
+            //action.Should().Throw<DomainExceptionValidation>()
+                //.WithMessage("Material inválido.");
+        //}
 
         #endregion
     }

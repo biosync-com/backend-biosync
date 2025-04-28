@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BioSync.Domain.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace BioSync.Application.DTOs
 {
@@ -30,8 +31,12 @@ namespace BioSync.Application.DTOs
         [Required(ErrorMessage = "O nome do responsável é obrigatório")]
         public string NomeResponsavel { get; set; }
 
+        public int EnderecoId { get; set; }
+        public List<int> DiasFuncionamentoIds { get; set; }
 
-        public PontoDescarteDTO(int id, string nome, string cpf, string cnpj, string telefone, string emailOuSite, string nomeResponsavel)
+        public PontoDescarteDTO() { }
+
+        public PontoDescarteDTO(int id, string nome, string cpf, string cnpj, string telefone, string emailOuSite, string nomeResponsavel,int enderecoId, List<int> diasFuncionamentoIds)
         {
             Id = id;
             Nome = nome;
@@ -40,7 +45,8 @@ namespace BioSync.Application.DTOs
             Telefone = telefone;
             EmailOuSite = emailOuSite;
             NomeResponsavel = nomeResponsavel;
-        
+            EnderecoId = enderecoId;
+            DiasFuncionamentoIds = diasFuncionamentoIds;
         }
     }
 }
