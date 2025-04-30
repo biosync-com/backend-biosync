@@ -48,5 +48,10 @@ namespace BioSync.Infra.Data.Repositories
             await _context.SaveChangesAsync();
             return coletor;
         }
+
+        Task<Usuario> IColetorRepository.GetByEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

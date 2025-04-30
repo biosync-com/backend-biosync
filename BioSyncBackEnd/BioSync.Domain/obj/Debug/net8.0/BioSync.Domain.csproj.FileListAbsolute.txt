@@ -46,3 +46,15 @@ C:\Users\junior\Documents\Projetos\BackEnd\backend-biosync\BioSyncBackEnd\BioSyn
 C:\Users\junior\Documents\Projetos\BackEnd\backend-biosync\BioSyncBackEnd\BioSync.Domain\bin\Debug\net8.0\BioSync.Domain.dll
 C:\Users\junior\Documents\Projetos\BackEnd\backend-biosync\BioSyncBackEnd\BioSync.Domain\bin\Debug\net8.0\BioSync.Domain.pdb
 C:\Users\junior\Documents\Projetos\BackEnd\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\ref\BioSync.Domain.dll
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\bin\Debug\net8.0\BioSync.Domain.deps.json
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\bin\Debug\net8.0\BioSync.Domain.dll
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\bin\Debug\net8.0\BioSync.Domain.pdb
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.AssemblyInfoInputs.cache
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.AssemblyInfo.cs
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.csproj.CoreCompileInputs.cache
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.sourcelink.json
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.dll
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\refint\BioSync.Domain.dll
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\BioSync.Domain.pdb
+C:\Edson - Projetos\BioSync\backend-biosync\BioSyncBackEnd\BioSync.Domain\obj\Debug\net8.0\ref\BioSync.Domain.dll

@@ -25,8 +25,8 @@ namespace BioSync.Infra.Data.Repositories
         public async Task<IEnumerable<Usuario>> GetAllAsync()
         {
             return await _context.Usuarios
-                .Include(u => u.Endereco) 
-                .Include(u => u.Agendamentos) 
+                .Include(u => u.Endereco)
+                .Include(u => u.Agendamentos)
                 .ToListAsync();
         }
 
@@ -34,7 +34,7 @@ namespace BioSync.Infra.Data.Repositories
         {
             return await _context.Usuarios
                 .Include(u => u.Endereco)
-                .Include(u => u.Agendamentos) 
+                .Include(u => u.Agendamentos)
                 .FirstOrDefaultAsync(u => u.Id == id);
         }
 
@@ -59,12 +59,10 @@ namespace BioSync.Infra.Data.Repositories
             return usuario;
         }
 
-        public async Task<Usuario> GetByEmailAsync(string email)
-        {
-            return await _context.Usuarios
-                .Include(u => u.Endereco) 
-                .Include(u => u.Agendamentos)
-                .FirstOrDefaultAsync(u => u.Email == email);
-        }
+        //    public async Task<Usuario> GetByEmailAsync(string email) => await _context.Usuarios
+        //            .Include(u => u.Endereco)
+        //            .Include(u => u.Agendamentos)
+        //            .FirstOrDefaultAsync(u => u.Email == email);
+        //}
     }
 }

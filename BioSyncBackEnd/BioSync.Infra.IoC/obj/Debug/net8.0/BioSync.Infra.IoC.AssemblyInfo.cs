@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BioSync.Infra.IoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82b09a634d4df951296d8968412ad8842831edc1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0e0fe6df0343e686f5df68a0c2aefcfc220a0d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BioSync.Infra.IoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BioSync.Infra.IoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
